@@ -1,0 +1,239 @@
+\chapter{Software Requirements Specification (SRS)}
+
+\section{Introduction}
+\subsection{Purpose}
+This Software Requirements Specification (SRS) document aims to provide a comprehensive description of OpenArmor, including its functionalities, user interfaces, and system requirements. It serves as a guide for developers, testers, and stakeholders throughout the development process.
+
+\subsection{Scope}
+OpenArmor is an advanced cybersecurity solution that leverages eBPF logging, AI-driven threat detection, and standardized log formats to enhance an organization's security posture. This document covers the core features, user interactions, and system interfaces of OpenArmor.
+
+\subsection{Definitions, Acronyms, and Abbreviations}
+\begin{itemize}
+    \item eBPF: extended Berkeley Packet Filter
+    \item OCSF: Open Cybersecurity Schema Framework
+    \item AI: Artificial Intelligence
+    \item ML: Machine Learning
+    \item SRS: Software Requirements Specification
+\end{itemize}
+
+\section{Overall Description}
+\subsection{Product Perspective}
+OpenArmor is designed as both a standalone product and an integrated component within larger cybersecurity ecosystems. It enhances existing security infrastructures by providing advanced logging and threat detection capabilities.
+
+\subsection{System Interfaces}
+OpenArmor interfaces with:
+\begin{itemize}
+    \item Operating System Kernel: For eBPF-based logging
+    \item Existing SIEM systems: For log ingestion and alert generation
+    \item External threat intelligence feeds: For up-to-date threat information
+\end{itemize}
+
+\subsection{User Interfaces}
+OpenArmor provides:
+\begin{itemize}
+    \item Web-based dashboard: For real-time monitoring and configuration
+    \item Command-line interface: For advanced users and automation
+    \item API: For integration with other security tools and custom applications
+\end{itemize}
+
+\subsection{Product Functions}
+\begin{itemize}
+    \item eBPF Logging: Efficient capture of kernel-level system logs with minimal overhead.
+    \item OCSF Standardization: Structuring and normalization of logs into standardized formats for interoperability.
+    \item Kernel Space Logging: Extraction of logs directly from the kernel space, providing lower-level visibility.
+    \item AI Log Processing: Parsing, analyzing, and transforming logs into standardized formats using artificial intelligence algorithms.
+    \item Automated Threat Detection: Utilization of machine learning to baseline normal behavior and identify anomalies indicative of cyber threats.
+    \item Alert Generation: Creation and prioritization of security alerts based on detected anomalies.
+    \item Reporting: Generation of detailed security reports and visualizations.
+\end{itemize}
+
+\section{User Classes and Characteristics}
+\subsection{Cybersecurity Analysts}
+\begin{itemize}
+    \item Primary users of the system
+    \item High level of technical expertise in cybersecurity
+    \item Require detailed threat information and advanced analysis tools
+\end{itemize}
+
+\subsection{System Administrators}
+\begin{itemize}
+    \item Responsible for deployment and maintenance of OpenArmor
+    \item Strong technical background in system administration
+    \item Need configuration and performance monitoring tools
+\end{itemize}
+
+\subsection{IT Managers}
+\begin{itemize}
+    \item Oversee cybersecurity operations
+    \item Require high-level dashboards and summary reports
+    \item Less technical, more focused on strategic decision-making
+\end{itemize}
+
+\section{Operating Environment}
+\subsection{Hardware Requirements}
+\begin{itemize}
+    \item Minimum: 8-core CPU, 16GB RAM, 500GB SSD
+    \item Recommended: 16-core CPU, 32GB RAM, 1TB SSD
+\end{itemize}
+
+\subsection{Software Requirements}
+\begin{itemize}
+    \item Operating System: Linux (kernel version 4.15 or later)
+    \item Database: PostgreSQL 12 or later
+    \item Web Server: Nginx or Apache
+\end{itemize}
+
+\subsection{Network Requirements}
+\begin{itemize}
+    \item Gigabit Ethernet connection
+    \item Outbound internet access for threat intelligence updates
+\end{itemize}
+
+\section{Design and Implementation Constraints}
+\begin{itemize}
+    \item Must comply with relevant data protection regulations (e.g., GDPR, CCPA)
+    \item Should be scalable to handle large enterprise environments
+    \item Must support high availability and disaster recovery configurations
+\end{itemize}
+
+\section{Assumptions and Dependencies}
+\subsection{Assumptions}
+\begin{itemize}
+    \item Users have basic familiarity with cybersecurity concepts
+    \item The operating environment supports eBPF technology
+    \item Consistent internet connectivity for threat intelligence updates
+\end{itemize}
+
+\subsection{Dependencies}
+\begin{itemize}
+    \item Relies on up-to-date threat intelligence feeds
+    \item Depends on machine learning libraries for AI-driven analysis
+    \item Requires regular updates to maintain effectiveness against evolving threats
+\end{itemize}
+
+\section{External Interface Requirements}
+
+\subsection{User Interfaces}
+OpenArmor's user interface will be a web-based dashboard, similar to Wazuh's, providing:
+\begin{itemize}
+    \item Real-time event viewer with filtering and search capabilities
+    \item Interactive visualizations for system and security metrics
+    \item Configuration management interface for agents and rules
+    \item Alert management and investigation tools
+    \item Customizable dashboards for different user roles
+\end{itemize}
+
+\subsection{Hardware Interfaces}
+OpenArmor will support various hardware sensors and security appliances, including:
+\begin{itemize}
+    \item Network Interface Cards (NICs) for packet capture
+    \item Hardware Security Modules (HSMs) for secure key storage
+    \item IPMI-enabled devices for out-of-band management
+\end{itemize}
+
+\subsection{Software Interfaces}
+OpenArmor will integrate with and extend the capabilities of:
+\begin{itemize}
+    \item Wazuh: For host-based intrusion detection and log analysis
+    \item OSquery: For querying endpoint state information
+    \item Sysmon: For detailed Windows event logging
+    \item SIEM systems: Via standardized log formats (OCSF)
+    \item Threat Intelligence Platforms: For up-to-date IoCs and threat data
+\end{itemize}
+
+APIs will be provided for:
+\begin{itemize}
+    \item RESTful data access and management
+    \item Webhook integrations for alerts and events
+    \item Custom plugin development
+\end{itemize}
+
+\subsection{Communications Interfaces}
+OpenArmor will support:
+\begin{itemize}
+    \item Encrypted agent-server communication (similar to Wazuh)
+    \item HTTPS for web interface access
+    \item SSH for remote management
+    \item Syslog for log ingestion
+    \item MQTT for IoT device communication
+\end{itemize}
+
+\section{Functional Requirements}
+
+\subsection{eBPF Logging}
+\begin{itemize}
+    \item Capture system calls, network events, and file operations
+    \item Provide real-time streaming of eBPF events
+    \item Allow custom eBPF programs for specialized monitoring
+\end{itemize}
+
+\subsection{OCSF Standardization}
+\begin{itemize}
+    \item Convert logs from various sources (Wazuh, OSquery, Sysmon) to OCSF format
+    \item Provide mapping tools for custom log sources
+    \item Ensure compatibility with OCSF-compliant SIEM systems
+\end{itemize}
+
+\subsection{Kernel Space Logging}
+\begin{itemize}
+    \item Integrate Sysmon-style detailed event logging for Windows systems
+    \item Develop Linux kernel module for enhanced logging capabilities
+    \item Provide kernel-level visibility without performance impact
+\end{itemize}
+
+\subsection{AI Log Processing}
+\begin{itemize}
+    \item Implement machine learning models for log parsing and normalization
+    \item Develop AI-driven correlation engine for complex event analysis
+    \item Provide automated log summarization and insights
+\end{itemize}
+
+\subsection{Automated Threat Detection}
+\begin{itemize}
+    \item Integrate and enhance Wazuh's rule-based detection capabilities
+    \item Implement anomaly detection using machine learning models
+    \item Provide behavior-based detection for advanced persistent threats
+\end{itemize}
+
+\subsection{OSquery Integration}
+\begin{itemize}
+    \item Incorporate OSquery for on-demand and scheduled system state queries
+    \item Extend OSquery capabilities with custom tables for eBPF data
+    \item Provide a unified interface for querying data from all monitored systems
+\end{itemize}
+
+\section{Non-Functional Requirements}
+
+\subsection{Performance Requirements}
+\begin{itemize}
+    \item Process up to 100,000 events per second on recommended hardware
+    \item Web interface response time under 2 seconds for most operations
+    \item Agent resource usage below 5%- CPU and 256MB RAM on monitored systems
+\end{itemize}
+
+\subsection{Safety Requirements}
+\begin{itemize}
+    \item Implement safeguards to prevent eBPF programs from crashing the kernel
+    \item Ensure that log collection doesn't interfere with critical system operations
+    \item Provide failsafe mechanisms for agents to prevent system instability
+\end{itemize}
+
+\subsection{Security Requirements}
+\begin{itemize}
+    \item End-to-end encryption for all communications
+    \item Role-based access control (RBAC) for user management
+    \item Multi-factor authentication for administrative access
+    \item Secure key management for agent-server communications
+    \item Regular security audits and penetration testing
+\end{itemize}
+
+\subsection{Software Quality Attributes}
+\begin{itemize}
+    \item Availability: 99.99%- uptime for core services
+    \item Scalability: Support for up to 100,000 endpoints in a single deployment
+    \item Maintainability: Modular architecture for easy updates and extensions
+    \item Interoperability: Standard APIs and data formats for integration with existing security tools
+\end{itemize}
+
+\section{Conclusion}
+This SRS provides a comprehensive overview of the OpenArmor system, incorporating key features from Wazuh, OSquery, and Sysmon while extending their capabilities with eBPF and AI-driven analysis. It serves as a foundation for the development process and should be updated as the project evolves. The integration of these established tools with OpenArmor's innovative features aims to create a powerful, unified cybersecurity solution capable of addressing the complex threat landscape faced by modern organizations.

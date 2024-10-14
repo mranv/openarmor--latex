@@ -1,0 +1,110 @@
+\documentclass[11pt,a4paper]{report}
+% Packages for formatting, math, and graphics
+\usepackage{times}
+\usepackage[pdftex]{graphicx}
+\usepackage{amsmath}
+\usepackage{longtable}
+\usepackage[acronym]{glossaries}  % Changed from acronym to glossaries
+\usepackage[utf8]{inputenc}
+\usepackage{color}
+\usepackage{amssymb}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{txfonts}
+\usepackage{mathdots}
+\usepackage{rotating}
+\usepackage{array}
+\usepackage[classicReIm]{kpfonts}
+% Graphics file extensions
+\DeclareGraphicsExtensions{.pdf,.jpeg,.png,.PNG}
+% Hyperref setup for links
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    citecolor=red
+}
+\urlstyle{same}
+% Additional packages for math, citations, and layout
+\usepackage{mathtools}
+\usepackage[numbers,sort&compress]{natbib}  % Changed from [superscript]{cite}
+\usepackage[top=2cm, bottom=2cm, left=2.5cm, right=2cm]{geometry}
+\usepackage[compact]{titlesec}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage[T1]{fontenc}  % Changed to [T1]
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[printwatermark]{xwatermark}
+\usepackage{transparent}
+\usepackage{algorithm2e}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage[final]{pdfpages}
+\usepackage{MnSymbol,wasysym}
+% Document settings
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+\setlength{\arrayrulewidth}{0.4mm}
+\setlength{\tabcolsep}{18pt}
+\renewcommand{\arraystretch}{1.5}
+% Page style settings
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyhead[R]{\itshape\leftmark}
+\fancyfoot[C]{\thepage}
+\renewcommand\headrulewidth{0pt}
+% URL hyphenation
+\PassOptionsToPackage{hyphens}{url}
+% Font and spacing
+\usepackage{mathptmx}
+\linespread{1.5}
+% Load glossaries
+\makeglossaries
+
+% Load abbreviations
+\input{abbreviations}
+
+\begin{document}
+% Front matter
+\renewcommand{\thepage}{\roman{page}}
+\include{cover}
+\include{Certificate}
+\include{Ack}
+\include{Abstract}
+\include{toc}
+% Include the list of abbreviations
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{List of Abbreviations}
+\printglossary[type=\acronymtype,title={List of Abbreviations}]
+% Main content
+\pagenumbering{arabic}
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{\chaptername \ \thechapter \ -\ #1}{}}
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+\include{Chap-1-Intro}
+\include{chap-2-Lit}
+\include{Chap-3-SRS}
+\include{chap-4-Design}
+\include{Chap-5-Methodology}
+\include{Chap-6-imple}
+\include{testing}
+\include{Chap-7-Concl}
+\include{Chap-8-Futur}
+
+% Bibliography
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{References}
+\bibliographystyle{unsrtnat}
+\bibliography{references}
+
+\end{document}
