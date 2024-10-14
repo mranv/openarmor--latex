@@ -1,0 +1,190 @@
+\contentsline {chapter}{Acknowledgements}{iii}{section*.3}%
+\contentsline {chapter}{Abstract}{iv}{section*.4}%
+\contentsline {chapter}{Table of Contents}{vi}{section*.5}%
+\contentsline {chapter}{List of Symbols}{vii}{section*.7}%
+\contentsline {chapter}{List of Definitions}{ix}{section*.9}%
+\contentsline {chapter}{List of Abbreviations}{1}{section*.11}%
+\contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Background}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Introduction to OpenArmor}{2}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Purpose of the Document}{2}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Document Conventions}{3}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Intended Audience}{3}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Product Scope}{4}{section.1.6}%
+\contentsline {chapter}{\numberline {2}Literature Survey}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Advanced Network Functions and Monitoring}{5}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}eBPF-Based Network Functions}{5}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Distributed Cloud Monitoring}{5}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}AI and Machine Learning in Cybersecurity}{6}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}AI-Driven Cybersecurity Overview}{6}{subsection.2.3.1}%
+\contentsline {section}{\numberline {2.4}Cybersecurity Event Extraction and Analysis}{6}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Document-level Cybersecurity Event Extraction}{6}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Rich Semantic Information Extraction}{6}{subsection.2.4.2}%
+\contentsline {section}{\numberline {2.5}Research Paper 1}{7}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Research Paper 2}{7}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Research Paper 3}{8}{section.2.7}%
+\contentsline {section}{\numberline {2.8}Research Paper 4}{8}{section.2.8}%
+\contentsline {section}{\numberline {2.9}Research Paper 5}{9}{section.2.9}%
+\contentsline {section}{\numberline {2.10}Research Paper 6}{9}{section.2.10}%
+\contentsline {section}{\numberline {2.11}Research Paper 7}{10}{section.2.11}%
+\contentsline {section}{\numberline {2.12}Research Paper 8}{10}{section.2.12}%
+\contentsline {section}{\numberline {2.13}Research Paper 9}{11}{section.2.13}%
+\contentsline {section}{\numberline {2.14}Research Paper 10}{11}{section.2.14}%
+\contentsline {section}{\numberline {2.15}Conclusion}{11}{section.2.15}%
+\contentsline {chapter}{\numberline {3}Software Requirements Specification (SRS)}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction}{13}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Purpose}{13}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Scope}{13}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Definitions, Acronyms, and Abbreviations}{13}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Overall Description}{13}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Product Perspective}{13}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}System Interfaces}{14}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}User Interfaces}{14}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Product Functions}{14}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}User Classes and Characteristics}{15}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Cybersecurity Analysts}{15}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}System Administrators}{15}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}IT Managers}{15}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Operating Environment}{15}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Hardware Requirements}{15}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Software Requirements}{15}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Network Requirements}{15}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}Design and Implementation Constraints}{16}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Assumptions and Dependencies}{16}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Assumptions}{16}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Dependencies}{16}{subsection.3.6.2}%
+\contentsline {section}{\numberline {3.7}External Interface Requirements}{16}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}User Interfaces}{16}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Hardware Interfaces}{17}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}Software Interfaces}{17}{subsection.3.7.3}%
+\contentsline {subsection}{\numberline {3.7.4}Communications Interfaces}{17}{subsection.3.7.4}%
+\contentsline {section}{\numberline {3.8}Functional Requirements}{18}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}eBPF Logging}{18}{subsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.8.2}OCSF Standardization}{18}{subsection.3.8.2}%
+\contentsline {subsection}{\numberline {3.8.3}Kernel Space Logging}{18}{subsection.3.8.3}%
+\contentsline {subsection}{\numberline {3.8.4}AI Log Processing}{18}{subsection.3.8.4}%
+\contentsline {subsection}{\numberline {3.8.5}Automated Threat Detection}{18}{subsection.3.8.5}%
+\contentsline {subsection}{\numberline {3.8.6}OSquery Integration}{18}{subsection.3.8.6}%
+\contentsline {section}{\numberline {3.9}Non-Functional Requirements}{19}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}Performance Requirements}{19}{subsection.3.9.1}%
+\contentsline {subsection}{\numberline {3.9.2}Safety Requirements}{19}{subsection.3.9.2}%
+\contentsline {subsection}{\numberline {3.9.3}Security Requirements}{19}{subsection.3.9.3}%
+\contentsline {subsection}{\numberline {3.9.4}Software Quality Attributes}{19}{subsection.3.9.4}%
+\contentsline {section}{\numberline {3.10}Conclusion}{19}{section.3.10}%
+\contentsline {chapter}{\numberline {4}System Design}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}System Architecture}{21}{section.4.1}%
+\contentsline {section}{\numberline {4.2}External Interfaces}{21}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}User Interfaces}{21}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Hardware Interfaces}{22}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Software Interfaces}{22}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Communication Interfaces}{23}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}System Features}{24}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}eBPF-Enhanced Kernel Space Logging}{24}{subsection.4.3.1}%
+\contentsline {subsubsection}{Description and Priority}{24}{subsection.4.3.1}%
+\contentsline {subsubsection}{Stimulus/Response Sequences}{24}{subsection.4.3.1}%
+\contentsline {subsubsection}{Functional Requirements}{24}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}OCSF Standardization and Integration}{24}{subsection.4.3.2}%
+\contentsline {subsubsection}{Description and Priority}{24}{subsection.4.3.2}%
+\contentsline {subsubsection}{Stimulus/Response Sequences}{25}{subsection.4.3.2}%
+\contentsline {subsubsection}{Functional Requirements}{25}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}AI-Driven Threat Detection}{25}{subsection.4.3.3}%
+\contentsline {subsubsection}{Description and Priority}{25}{subsection.4.3.3}%
+\contentsline {subsubsection}{Stimulus/Response Sequences}{25}{subsection.4.3.3}%
+\contentsline {subsubsection}{Functional Requirements}{26}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Unified Query and Response System}{26}{subsection.4.3.4}%
+\contentsline {subsubsection}{Description and Priority}{26}{subsection.4.3.4}%
+\contentsline {subsubsection}{Stimulus/Response Sequences}{26}{subsection.4.3.4}%
+\contentsline {subsubsection}{Functional Requirements}{26}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.4}Data Design}{26}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Security and Privacy Design}{27}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Performance}{27}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Conclusion}{27}{section.4.7}%
+\contentsline {chapter}{\numberline {5}Methodology}{28}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Data Acquisition Phase}{28}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}eBPF-based Kernel Monitoring}{28}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Integration with Existing Security Tools}{28}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Network Traffic Analysis}{29}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}Data Integration and Normalization Phase}{29}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}OCSF Standardization}{29}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Data Enrichment}{29}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Data Processing and Analysis Phase}{29}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Data Preprocessing}{29}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Machine Learning Pipeline}{30}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Real-time Analytics}{30}{subsection.5.3.3}%
+\contentsline {section}{\numberline {5.4}Threat Detection and Response Phase}{30}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Automated Threat Detection}{30}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Alert Prioritization and Triage}{31}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Automated Response}{31}{subsection.5.4.3}%
+\contentsline {section}{\numberline {5.5}Continuous Improvement}{31}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Conclusion}{31}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Implementation}{32}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Phase 1: Advanced Logging and Data Collection}{32}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}eBPF Logging Implementation}{32}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Integration of Existing Security Tools}{32}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Network Traffic Analysis}{32}{subsection.6.1.3}%
+\contentsline {section}{\numberline {6.2}Phase 2: Log Standardization and Integration}{33}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}OCSF Standardization Implementation}{33}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Data Enrichment Pipeline}{33}{subsection.6.2.2}%
+\contentsline {section}{\numberline {6.3}Phase 3: AI Log Processing}{33}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Data Preprocessing}{33}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Machine Learning Model Development}{33}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}Natural Language Processing}{34}{subsection.6.3.3}%
+\contentsline {section}{\numberline {6.4}Phase 4: Automated Threat Detection}{34}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Rule-Based Detection Engine}{34}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Anomaly Detection System}{34}{subsection.6.4.2}%
+\contentsline {subsection}{\numberline {6.4.3}Behavior Analytics}{34}{subsection.6.4.3}%
+\contentsline {subsection}{\numberline {6.4.4}Threat Intelligence Integration}{34}{subsection.6.4.4}%
+\contentsline {section}{\numberline {6.5}Phase 5: Monitoring and Response}{35}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Real-Time Analytics Implementation}{35}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.2}Alert Management System}{35}{subsection.6.5.2}%
+\contentsline {subsection}{\numberline {6.5.3}Response Automation}{35}{subsection.6.5.3}%
+\contentsline {subsection}{\numberline {6.5.4}User Interface and Dashboards}{35}{subsection.6.5.4}%
+\contentsline {section}{\numberline {6.6}Phase 6: Continuous Improvement}{35}{section.6.6}%
+\contentsline {subsection}{\numberline {6.6.1}Feedback Loop Implementation}{35}{subsection.6.6.1}%
+\contentsline {subsection}{\numberline {6.6.2}Model Update Pipeline}{36}{subsection.6.6.2}%
+\contentsline {subsection}{\numberline {6.6.3}Threat Intelligence Gathering}{36}{subsection.6.6.3}%
+\contentsline {section}{\numberline {6.7}Conclusion}{36}{section.6.7}%
+\contentsline {chapter}{\numberline {7}OpenArmor Agent-Server Testing}{38}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Introduction}{38}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Test Environment Setup}{38}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Agent Setup}{38}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Server Setup}{38}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Network Configuration}{39}{subsection.7.2.3}%
+\contentsline {section}{\numberline {7.3}Functionality Testing}{39}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Agent Registration}{39}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Data Collection and Transmission}{40}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.3}Command and Control}{41}{subsection.7.3.3}%
+\contentsline {section}{\numberline {7.4}Security Testing}{41}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Encryption}{41}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Authentication}{41}{subsection.7.4.2}%
+\contentsline {subsection}{\numberline {7.4.3}Authorization}{42}{subsection.7.4.3}%
+\contentsline {section}{\numberline {7.5}Performance Testing}{42}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}Load Testing}{42}{subsection.7.5.1}%
+\contentsline {subsection}{\numberline {7.5.2}Latency Testing}{42}{subsection.7.5.2}%
+\contentsline {subsection}{\numberline {7.5.3}Reliability Testing}{42}{subsection.7.5.3}%
+\contentsline {section}{\numberline {7.6}Integration Testing}{43}{section.7.6}%
+\contentsline {subsection}{\numberline {7.6.1}SIEM Integration}{43}{subsection.7.6.1}%
+\contentsline {subsection}{\numberline {7.6.2}API Testing}{43}{subsection.7.6.2}%
+\contentsline {section}{\numberline {7.7}User Acceptance Testing}{43}{section.7.7}%
+\contentsline {subsection}{\numberline {7.7.1}Dashboard Functionality}{43}{subsection.7.7.1}%
+\contentsline {subsection}{\numberline {7.7.2}Reporting}{44}{subsection.7.7.2}%
+\contentsline {section}{\numberline {7.8}Conclusion}{44}{section.7.8}%
+\contentsline {chapter}{\numberline {8}Conclusion}{45}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Key Achievements}{45}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Challenges and Considerations}{46}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Future Implications and Potential Impact}{46}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Closing Thoughts}{47}{section.8.4}%
+\contentsline {chapter}{\numberline {9}Future Work}{48}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Expand Platform Support}{48}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Enhance Data Collection and Integration}{48}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Advanced AI and Machine Learning Capabilities}{49}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Enhanced eBPF Capabilities}{49}{section.9.4}%
+\contentsline {section}{\numberline {9.5}Compliance and Regulatory Frameworks}{49}{section.9.5}%
+\contentsline {section}{\numberline {9.6}Advanced Threat Detection and Response}{50}{section.9.6}%
+\contentsline {section}{\numberline {9.7}User Experience and Visualization}{50}{section.9.7}%
+\contentsline {section}{\numberline {9.8}Performance and Scalability}{50}{section.9.8}%
+\contentsline {section}{\numberline {9.9}Incident Response and Orchestration}{50}{section.9.9}%
+\contentsline {section}{\numberline {9.10}Continuous Learning and Improvement}{51}{section.9.10}%
+\contentsline {section}{\numberline {9.11}Research Initiatives}{51}{section.9.11}%
+\contentsline {section}{\numberline {9.12}Conclusion}{51}{section.9.12}%
